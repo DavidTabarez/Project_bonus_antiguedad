@@ -43,14 +43,35 @@ public class Bonus_antiguedad {
 			System.out.println("Tu pago final es de: " + total);
 			
 			break;
+			
 		case 2: 
-
-		default:
+			System.out.println("Ingrese su sueldo: ");
+			sueldo_bono = entrada.nextDouble();
+			
+			if (sueldo_bono < 1000) {
+				bono_sueldo = (sueldo_bono * 0.25);
+				total = (bono_sueldo + sueldo_bono);
+				
+			} else if (sueldo_bono >= 1000 && sueldo_bono <= 3500) {
+				bono_sueldo = (sueldo_bono * 0.15);
+				total = (bono_sueldo + sueldo_bono);
+				
+			} else {
+				bono_sueldo = (sueldo_bono * 0.10);
+				total = (bono_sueldo + sueldo_bono);
+				
+			} // fin del 2do if else
+			
+			System.out.println("Tu pago es de: " + total);
+			
 			break;
-		}
-		
-		
-
+			
+		default:
+			System.out.println("Opcion no valida");
+			break;
+			
+		} // fin del Switch
+	
 	}
 
 }
