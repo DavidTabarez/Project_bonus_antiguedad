@@ -20,7 +20,7 @@ public class Bonus_antiguedad {
 		switch (opcion) {
 		case 1:
 			
-			System.out.println("Ingrese su años trabajando: ");
+			System.out.println("Ingrese sus años trabajando: ");
 			antiguedad = entrada.nextByte();
 			
 			System.out.println("ingrese su sueldo: ");
@@ -29,12 +29,10 @@ public class Bonus_antiguedad {
 				System.out.println("no cuentas con antiguedad");
 				
 			} else if (antiguedad >= 2 && antiguedad < 5 ) {
-				System.out.println("20%");
 				bono_antiguedad = (sueldo * 0.20);
 				total = (sueldo + bono_antiguedad);
 				
 			} else {
-				System.out.println("30%");
 				bono_antiguedad = (sueldo * 0.30);
 				total = (sueldo + bono_antiguedad);
 				
